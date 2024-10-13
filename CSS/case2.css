@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+}
+.container{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.outerCircle{
+    height: 300px;
+    width: 300px;
+    border: 15px solid;
+    border-color:red white white ;
+    border-radius: 50%; 
+    transition: 4s ease;
+}
+
+
+.innerCircle{
+    height: 300px;
+    width: 300px;
+    background-color: gray; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+    transition: 4s ;
+    
+}
+
+.outerCircle:hover {
+ transform: rotate(360deg);
+}
+.outerCircle:hover .innerCircle{
+    transform: rotate(-360deg);
+}
+.outerCircle:not(:hover){
+    transition: tranform 0s;
+    
+}
+.outerCircle:not(:hover) .innerCircle{
+    transition: tranform 0s;
+}
+
+h1{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
